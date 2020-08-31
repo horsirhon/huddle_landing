@@ -1,0 +1,133 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body {
+    min-height: 100vh;
+}
+body {
+    background-image: url('images/bg-desktop.svg');
+    background-color: hsl(257, 40%, 49%);
+    background-position: top left;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    flex-flow: column wrap;
+    color:white;
+}
+header {
+    display: flex;
+    padding: 2em 5vw;
+    width: 100vw;
+}
+header img {
+    height: 3.5em
+}
+section {
+    display: flex;
+    padding: 2em 5vw;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 1150px;
+}
+.left, .right {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+.left img{
+    width: 49vw;
+    max-width: 570px;
+}
+.right {
+    margin-left: 4vw;
+    padding-bottom: 3em;
+}
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size:2em ;
+    line-height: 1.2em;
+    margin-bottom: .7em;
+}
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+    margin-bottom: 1.5em;
+}
+button {
+    height: 3em;
+    width: 11em;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+button a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3em;
+}
+
+@media(max-width:400px){
+    body {
+        background-image: url('images/bg-mobile.svg');
+    }
+    header {
+        display: flex;
+        padding: 2em 1em;
+        width: 100vw;
+    }
+    header img {
+        height: 2.7em
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        max-width: 375px;
+        min-width:250px;
+    }
+    .left, .right {
+        min-height: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .left img{
+        width: 90vw;
+        margin-bottom: 3em;
+    }
+    .right {
+        margin-left: 0vw;
+        padding-bottom: 3em;
+    }
+    h1 {
+        font-family: 'Poppins', sans-serif;
+        font-size:2em ;
+        line-height: 1.2em;
+        margin-bottom: .7em;
+    }
+    p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 0.9em;
+        margin-bottom: 1.5em;
+    }
+    button {
+        height: 3em;
+        width: 11em;
+        border: none;
+        border-radius: 20px;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+        margin-top: 1em;
+    }
+    button a {
+        text-decoration: none;
+        color: black;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.3em;
+    }
+}
